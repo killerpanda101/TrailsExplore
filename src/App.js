@@ -3,11 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
-import Bar from "./scenes/bar";
-import Line from "./scenes/line";
-import Pie from "./scenes/pie";
+import Disease from "./scenes/disease";
+import Drugs from "./scenes/drugs";
 import FAQ from "./scenes/faq";
+import Sponsor from "./scenes/sponsor";
 import Geography from "./scenes/geography";
+import Investigators from "./scenes/investigators";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 
@@ -25,11 +26,12 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
+              <Route path="/diseases" element={<Disease/>} />
+              <Route path="/sponsors" element={<Sponsor />} />
+              <Route path="/drugs" element={<Drugs />} />
+              <Route path="/investigators" element={<Investigators />} />
+              <Route path="/location" element={<Geography />} />
               <Route path="/faq" element={<FAQ />} />
-              <Route path="/geography" element={<Geography />} />
             </Routes>
           </main>
         </div>

@@ -94,35 +94,35 @@ const Sidebar = () => {
             />
             <Item
               title="Diseases"
-              to="/line"
+              to="/diseases"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Sponsors"
-              to="/bar"
+              to="/sponsors"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Drugs"
-              to="/line"
+              to="/drugs"
               icon={<TimelineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Investigators"
-              to="/pie"
+              to="/investigators"
               icon={<PieChartOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Locations"
-              to="/geography"
+              to="/location"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
